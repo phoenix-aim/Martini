@@ -335,7 +335,7 @@ beta_nms=0.6
             Math.round(maxBatches * 0.9)
         ];
 
-        let scales = [2.5, 1.5, 1, .25]
+        let scales = [2.5, 1.5, 1, 0.5, 0.25]
 
         template = template.replaceAll('[steps]', steps.join(','))
         template = template.replaceAll('[scales]', scales.join(','))
