@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap');
+
+$background-color: #222;
+$secondary-color: #3c3c3c;
+$foreground-color: #EEE;
+$primary: #19d119;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: $background-color;
+  color: $foreground-color;
+}
+
+// Components
+@import "components/sidebar";
+@import "components/config";
+@import "components/collapse-group";
+
+.btn-primary {
+  background-color:$primary;
+  border-color:$primary;
+  color:black;
+  width:100%;
+
+  &:hover {
+    background-color:darken($primary, 15) !important;
+    border-color:darken($primary, 15) !important;
+  }
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  overflow: hidden;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: $primary;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0;
+}
+
+input[type='range']::-moz-range-thumb {
+  background: #333;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0;
+}
+
+input[type="range"]::-moz-range-track {
+  background-color: #ddd;
+}
+input[type="range"]::-moz-range-progress {
+  background-color: #666;
+}
+input[type="range"]::-ms-fill-upper {
+  background-color: #ddd;
+}
+input[type="range"]::-ms-fill-lower {
+  background-color: #666;
+}
+
+.form-check-input:checked {
+  background-color: $primary;
+  border-color: $primary;
+}

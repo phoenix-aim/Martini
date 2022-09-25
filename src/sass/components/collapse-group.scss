@@ -1,0 +1,33 @@
+.c-collapsable-group {
+  border-bottom:1px solid $secondary-color;
+  padding-top:25px;
+  padding-bottom:10px;
+
+  &.active {
+    border-bottom:1px solid $primary;
+    padding-bottom:20px;
+    margin-bottom:20px;
+
+    .c-collapsable-group__chevron {
+      transform: rotate(90deg);
+    }
+
+    .c-collapsable-group__container {
+      display: block !important;
+    }
+  }
+
+  &__chevron {
+    position: relative;
+    top:2px;
+    pointer-events: none;
+  }
+
+  &__button {
+    cursor: pointer;
+  }
+
+  &__container {
+    display:none;
+  }
+}

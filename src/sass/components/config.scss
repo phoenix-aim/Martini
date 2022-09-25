@@ -1,0 +1,16 @@
+.c-config {
+  padding:20px;
+
+  textarea {
+    background-color:$background-color;
+    border:1px solid $secondary-color;
+    resize:none;
+    width:100%;
+    height:calc(100vh - 100px);
+    margin-bottom:15px;
+    color:$foreground-color;
+    padding:20px;
+    border-color:$primary;
+    border-radius:3px;
+  }
+}

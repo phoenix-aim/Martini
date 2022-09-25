@@ -1,40 +1,15 @@
 <script setup>
-
-import Button from "./stories/components/button/Button.vue";
-
+  import LabelerContainer from "./templates/LabelerContainer.vue"
 </script>
 
 <template>
-  <main>
-    <Button label="Start" size="large" primary="true"></Button>
+  <main class="container-fluid">
+    <LabelerContainer />
   </main>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
+<style lang="sass">
+@import 'boxicons'
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+@import "sass/main"
 </style>

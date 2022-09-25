@@ -1,0 +1,41 @@
+.c-sidebar {
+  background-color:darken($background-color, 5%);
+  height:100vh;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding-bottom:20px;
+
+  &__wrapper {
+    padding:10px 20px;
+  }
+
+  &__settings {
+    overflow-y:auto;
+    max-height:calc(100vh - 100px);
+  }
+
+  &__header {
+    font-weight:900;
+
+    &__collapse {
+      height: 50px;
+      position: relative;
+      top:4px;
+      left:-2px;
+      font-size:30px;
+      transition: 0.2s color ease-in-out;
+
+      .bx {
+        background-color: black;
+        border-radius:100%;
+        width:30px;
+        height:30px;
+        text-align: center;
+
+        &::before {
+          position: relative;
+        }
+      }
+    }
+  }
+}
