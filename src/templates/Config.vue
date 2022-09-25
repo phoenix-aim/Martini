@@ -2,7 +2,7 @@
   <div class="c-config">
     <div class="row">
       <div class="col-12">
-        <h3 class="fw-bolder mb-3"><i class='bx bxs-drink'></i> MARTINI</h3>
+        <h3 class="fw-bolder mb-3"><i class='bx bxs-drink'></i> MARTINI <span style="font-size:12px;">(YOLOv4-Tiny Configurator)</span></h3>
       </div>
       <div class="col-12">
         <textarea v-bind:value="content" @keydown="parseTemplate" readonly></textarea>

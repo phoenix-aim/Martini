@@ -27,3 +27,5 @@ coverage
 *.sln
 *.sw?
 cache
+
+package-lock.json

@@ -2,6 +2,7 @@
   <div class="form-check form-switch">
     <input class="form-check-input js-setting" type="checkbox" id="mySwitch" :name="name" :checked="checked === 'true'">
     <label class="form-check-label" for="mySwitch" v-html="label"></label>
+    <i class='bx bxs-info-circle text-primary ms-2' style="position:relative;top:5px;font-size:24px;cursor:help" :title="tooltip" :class="{'d-none' : tooltip === ''}"></i>
   </div>
 </template>
 
@@ -18,6 +19,10 @@ export default {
       required: true,
     },
     name: {
+      type: String,
+      required: true,
+    },
+    tooltip: {
       type: String,
       required: true,
     },

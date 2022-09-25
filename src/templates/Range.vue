@@ -2,6 +2,10 @@
   <div class="form-control position-relative">
     <label for="customRange1" class="form-label text-start d-block" v-html="label"></label>
     <span class="position-absolute" style="right:10px;top:10px" v-html="labelValue"></span>
+    <span class="position-absolute" style="left:-15px;top:2px;font-size:24px;cursor:help"
+      :title="tooltip">
+      <i class='bx bxs-info-circle text-primary'></i>
+    </span>
     <input type="range" :name="name" class="form-range js-setting" id="customRange1" @change="update" :max="max" v-model="value" :min="min" :step="step">
   </div>
 </template>
@@ -15,6 +19,10 @@ export default {
 
   props: {
     label: {
+      type: String,
+      required: true,
+    },
+    tooltip: {
       type: String,
       required: true,
     },

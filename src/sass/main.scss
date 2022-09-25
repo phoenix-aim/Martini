@@ -16,6 +16,10 @@ body {
 @import "components/config";
 @import "components/collapse-group";
 
+.text-primary {
+  color: $primary !important;
+}
+
 .btn-primary {
   background-color:$primary;
   border-color:$primary;
