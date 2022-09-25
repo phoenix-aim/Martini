@@ -64,7 +64,7 @@
               <Range name="burn_in" label="Burn-In" max="10000" min="1" value="1000" step=1 />
             </div>
 
-            <div class="col-12 mb-3">
+            <div class="col-12">
               <Toggle name="random" label="My Images are Different Resolutions" checked="false" />
             </div>
           </div>
@@ -96,8 +96,12 @@
               <Toggle name="mosaic" label="Mosaic" checked="true" />
             </div>
 
-            <div class="col-12">
+            <div class="col-12 mb-3">
               <Toggle name="mixup" label="Mix-up" checked="true" />
+            </div>
+
+            <div class="col-12">
+              <Toggle name="blur" label="Blur" checked="false" />
             </div>
           </div>
         </div>

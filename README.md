@@ -1,29 +1,16 @@
-# martini
+# MARTINI Config Generator
 
-This template should help get you started developing with Vue 3 in Vite.
+This project aims to quickly generate YOLOv4-tiny configurations. Credits to Undєad#1337 for developing this tool.
 
-## Recommended IDE Setup
+## Prerequisites
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Download and install Node.js LTS https://nodejs.org/en/
 
 ## Project Setup
 
+Open a command prompt and run the following commands inside the project directory:
+
 ```sh
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
 ```
