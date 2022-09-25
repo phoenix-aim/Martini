@@ -69,3 +69,25 @@ input[type="range"]::-ms-fill-lower {
   background-color: $primary;
   border-color: $primary;
 }
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #51d237 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #51d237;
+  border-radius: 0px;
+  border: 0px solid #51d237;
+}

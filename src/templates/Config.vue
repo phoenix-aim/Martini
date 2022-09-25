@@ -2,10 +2,10 @@
   <div class="c-config">
     <div class="row">
       <div class="col-12">
-        <textarea v-bind:value="content" @keydown="parseTemplate" readonly></textarea>
+        <h3 class="fw-bolder mb-3"><i class='bx bxs-drink'></i> MARTINI</h3>
       </div>
       <div class="col-12">
-        <button class="btn btn-primary">Copy to Clipboard</button>
+        <textarea v-bind:value="content" @keydown="parseTemplate" readonly></textarea>
       </div>
     </div>
   </div>

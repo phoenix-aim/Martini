@@ -3,7 +3,7 @@
     <div class="c-sidebar__wrapper">
       <div class="c-sidebar__header row align-items-center">
         <div class="c-sidebar__header__collapse col-2">
-          <i class='bx bxs-drink'></i>
+          <i class='bx bxs-cog'></i>
         </div>
         <div class="c-sidebar__header__title col-10 text-end" v-text="title"></div>
       </div>
