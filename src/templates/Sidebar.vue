@@ -23,12 +23,8 @@
               <Range name="height" tooltip="Network size (height), so every image will be resized to the network size during Training and Detection" label="Height" max="1024" min="32" value="416" step="32" />
             </div>
 
-            <div class="col-12 mb-3">
-              <Range name="classes" tooltip="The number of labeled classifiers in your image set." label="Number of Classifiers" max="1000" min="1" value="1" step="1" />
-            </div>
-
             <div class="col-12">
-              <Range name="images" tooltip="The number of training images in your image set." label="Number of Classifiers" min="1" value="1" step="1" />
+              <Range name="classes" tooltip="The number of labeled classifiers in your image set." label="Number of Classifiers" max="1000" min="1" value="1" step="1" />
             </div>
           </div>
         </div>
@@ -41,11 +37,11 @@
 
           <div class="c-collapsable-group__container">
             <div class="col-12 mb-3">
-              <Range name="batch" tooltip="The number of samples (images, letters, ...) which will be processed in one batch." label="Batch Size" max="320" min="8" value="64" step="8" />
+              <Range name="batch" tooltip="The number of samples (images, letters, ...) which will be processed in one batch." label="Batch Size" max="320" min="2" value="64" step="2" />
             </div>
 
             <div class="col-12 mb-3">
-              <Range name="sub_divisions" tooltip="The number of mini_batches in one batch, size mini_batch = batch/subdivisions, so GPU processes." label="Sub Divisions" max="320" min="8" value="12" step="2" />
+              <Range name="sub_divisions" tooltip="The number of mini_batches in one batch, size mini_batch = batch/subdivisions, so GPU processes." label="Sub Divisions" max="320" min="2" value="12" step="2" />
             </div>
 
             <div class="col-12 mb-3">
@@ -57,7 +53,7 @@
             </div>
 
             <div class="col-12> mb-3">
-              <Range name="decay" tooltip="A weaker updating of the weights for typical features, it eliminates unbalance in the dataset (optimizer)." label="Decay" max="1" min="0.0001" value="0.0001" step=0.0001 />
+              <Range name="decay" tooltip="A weaker updating of the weights for typical features, it eliminates unbalance in the dataset (optimizer)." label="Decay" max="1" min="0.0001" value="0.0005" step=0.0001 />
             </div>
 
             <div class="col-12 mb-3">
@@ -65,7 +61,7 @@
             </div>
 
             <div class="col-12 mb-3">
-              <Range name="burn_in" tooltip="The initial burn_in will be processed for the first 1000 iterations." label="Burn-In" max="10000" min="1" value="1000" step=1 />
+              <Range name="burn_in" tooltip="The initial burn_in will be processed for the first 1000 iterations." label="Burn-In" max="10000" min="1" value="250" step=1 />
             </div>
 
             <div class="col-12">
@@ -81,7 +77,7 @@
 
           <div class="c-collapsable-group__container">
             <div class="col-12 mb-3">
-              <Range name="angle" tooltip="Randomly rotates images during training (classification only)." label="Angle" max="5" min="0" value="0" step=0.01 />
+              <Range name="angle" tooltip="Randomly rotates images during training (classification only)." label="Angle" max="5" min="0" value="0.05" step=0.01 />
             </div>
 
             <div class="col-12 mb-3">

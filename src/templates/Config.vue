@@ -326,25 +326,14 @@ beta_nms=0.6
 
         let classes = parseInt(values['classes'])
         let maxBatches = Math.round(2000 * classes)
-        let numberOfImages = parseInt(values['images'])
 
-        if (numberOfImages >= 6000) {
-          maxBatches = numberOfImages;
-        }
-
-        if (maxBatches >= 6000) {
-          maxBatches = 6000;
-        }
 
         let steps = [
-            Math.round(maxBatches * 0.5),
-            Math.round(maxBatches * 0.6),
-            Math.round(maxBatches * 0.7),
             Math.round(maxBatches * 0.8),
             Math.round(maxBatches * 0.9)
         ];
 
-        let scales = [2.5, 1.5, 1, 0.5, 0.25]
+        let scales = [2.5, 0.5]
 
         template = template.replaceAll('[steps]', steps.join(','))
         template = template.replaceAll('[scales]', scales.join(','))
