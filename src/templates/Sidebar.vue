@@ -81,19 +81,19 @@
 
           <div class="c-collapsable-group__container">
             <div class="col-12 mb-3">
-              <Range name="angle" tooltip="Randomly rotates images during training (classification only)." label="Angle" max="5" min="0.01" value="0.05" step=0.01 />
+              <Range name="angle" tooltip="Randomly rotates images during training (classification only)." label="Angle" max="5" min="0" value="0" step=0.01 />
             </div>
 
             <div class="col-12 mb-3">
-              <Range name="saturation" tooltip="Randomly changes saturation of images during training." label="Saturation" max="5" min="0.01" value="0.05" step=0.01 />
+              <Range name="saturation" tooltip="Randomly changes saturation of images during training." label="Saturation" max="5" min="0" value="1.5" step=0.01 />
             </div>
 
             <div class="col-12 mb-3">
-              <Range name="exposure" tooltip="Randomly changes exposure (brightness) during training." label="Exposure" max="5" min="0.01" value="0.05" step=0.01 />
+              <Range name="exposure" tooltip="Randomly changes exposure (brightness) during training." label="Exposure" max="5" min="0" value="1.5" step=0.01 />
             </div>
 
             <div class="col-12 mb-3">
-              <Range name="hue" tooltip="Randomly changes hue (color) during training." label="Hue" max="5" min="0.01" value="0.05" step=0.01 />
+              <Range name="hue" tooltip="Randomly changes hue (color) during training." label="Hue" max="5" min="0" value="0.1" step=0.01 />
             </div>
 
             <div class="col-12 mb-3">
