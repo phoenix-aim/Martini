@@ -1036,7 +1036,7 @@ max_delta=2
         })
 
         let classes = parseInt(values['classes'])
-        let maxBatches = Math.round(6000 * classes)
+        let maxBatches = Math.round(parseInt(values['iterations_per_class']) * classes)
 
 
         let steps = [

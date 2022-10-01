@@ -23,6 +23,10 @@
               <Range name="height" tooltip="Network size (height), so every image will be resized to the network size during Training and Detection" label="Height" max="1024" min="32" value="416" step="32" />
             </div>
 
+            <div class="col-12 mb-3">
+              <Range name="iterations_per_class" tooltip="The number of labeled classifiers in your image set." label="Iterations Per Class" max="20000" min="1" value="2000" step="1" />
+            </div>
+
             <div class="col-12">
               <Range name="classes" tooltip="The number of labeled classifiers in your image set." label="Number of Classifiers" max="1000" min="1" value="1" step="1" />
             </div>
