@@ -1036,7 +1036,7 @@ max_delta=2
         })
 
         let classes = parseInt(values['classes'])
-        let maxBatches = Math.round(2000 * classes)
+        let maxBatches = Math.round(6000 * classes)
 
 
         let steps = [
@@ -1044,7 +1044,7 @@ max_delta=2
             Math.round(maxBatches * 0.9)
         ];
 
-        let scales = [2.5, 0.5]
+        let scales = [0.5, 0.1]
 
         template = template.replaceAll('[steps]', steps.join(','))
         template = template.replaceAll('[scales]', scales.join(','))
